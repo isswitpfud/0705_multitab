@@ -1,14 +1,15 @@
 @charset"UTF-8";
 @import url(reset.css);
 
-h1{
+h1 {
     width: 1200px;
     padding: 20px;
     margin: 40px auto;
     text-align: center;
 }
 
-div#wrap{ border: 1px solid #000;
+div#wrap {
+    border: 1px solid #000;
     width: 1200px;
     height: 300px;
     padding: 40px 10px;
@@ -16,19 +17,19 @@ div#wrap{ border: 1px solid #000;
 
 }
 
-div#contents{
-    border: 3px solid #08f;
+div#contents {
+  /*  border: 3px solid #08f;*/
 }
 
-div#contents>div{
+div#contents > div {
     width: 400px;
     height: 200px;
     padding: 6px;
     margin: 6px;
-    border: 1px solid #000;
+
 }
 
-div#notice button.tabBtn{
+#notice button.tabBtn {
     font-size: 22px;
     padding: 4px 14px;
     border: 1px solid #aaa;
@@ -40,16 +41,36 @@ div#notice button.tabBtn{
     top: 1px;
 }
 
-div.tabContents{
+div#gallery button.tabBtn {
+    font-size: 22px;
+    padding: 4px 14px;
     border: 1px solid #aaa;
-    padding: 4px;
+    background-color: #eee;
 
-
+    position: relative;
+    left: 20px;
+    top: 1px;
 }
 
+div.tabContents {
+    border: 1px solid #aaa;
+    padding: 4px;
+}
 
+div#notice td {
+    line-height: 36px;
+}
 
+div#notice table {
+    width: 100%;
+    border-collapse: collapse;
+    /* td구간 연결 */
+}
 
+div#notice td:first-child {
+    padding: 0 20px 0 10px;
+}
 
-
-
+div#notice tr:nth-child(2n-1) td {
+    background-color: #eee;
+}
